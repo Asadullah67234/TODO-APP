@@ -3,6 +3,7 @@ dotenv.config();
 import express from "express";
 import connectDB from "./database/db.js";
 import userRoutes from "./routes/user.routes.js";
+import todoRoutes from "./routes/todo.routes.js";
 import cookieParser from "cookie-parser";
 
 
@@ -16,6 +17,7 @@ app.use(express.static("public"));
 
 
 app.use("/api/user", userRoutes);
+app.use("/api/todo", todoRoutes);
 
 app.listen(port, () => {
   console.log("Server is running on port " + port);
