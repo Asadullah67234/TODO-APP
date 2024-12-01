@@ -37,26 +37,6 @@ const Navbar = () => {
               <Link to="/">HOME</Link>
             </MenubarTrigger>
           </MenubarMenu>
-          <MenubarMenu>
-            <MenubarTrigger className="cursor-pointer">
-              <Link to="/todo">TODO LIST</Link>
-            </MenubarTrigger>
-          </MenubarMenu>
-          <MenubarMenu>
-            <MenubarTrigger className="cursor-pointer">
-              <Link to="/about">ABOUT</Link>
-            </MenubarTrigger>
-          </MenubarMenu>
-          <MenubarMenu>
-            <MenubarTrigger className="cursor-pointer">
-              <Link to="/contact">CONTACT</Link>
-            </MenubarTrigger>
-          </MenubarMenu>
-          <MenubarMenu>
-            <MenubarTrigger className="cursor-pointer">
-              <Link to="/services">SERVICES</Link>
-            </MenubarTrigger>
-          </MenubarMenu>
         </Menubar>
         <div>
           <Menubar className="rounded-full hidden md:flex">
@@ -91,21 +71,11 @@ const Navbar = () => {
                       Home
                     </Button>
                   </Link>
-                  <Link to="/todo">
+                  <Link to="/profile">
                     <Button variant="link" className="w-full">
-                      Todo
+                      Profile
                     </Button>
                   </Link>
-                  <Link to="/about">
-                    <Button variant="link" className="w-full">
-                      About
-                    </Button>
-                  </Link>
-                  <Link to="/contact">
-                    <Button variant="link" className="w-full">
-                      Contact
-                    </Button>
-                   </Link>
                 </SheetDescription>
               </SheetHeader>
             </SheetContent>
