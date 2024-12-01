@@ -70,7 +70,7 @@ const Navbar = () => {
                 </MenubarItem>
                 <MenubarItem className="cursor-pointer">
                   <Button variant="link" className="w-full">
-                    <Link to="/logout">Logout</Link>
+                    <Link>Logout</Link>
                   </Button>
                 </MenubarItem>
               </MenubarContent>
